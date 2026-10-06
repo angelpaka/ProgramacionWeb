@@ -1,5 +1,6 @@
 <?php
 // Recibe el formulario, valida en el servidor y guarda con consulta preparada (evita SQL Injection)
+// Recibe el formulario 02
 require_once __DIR__ . '/../config/conexion.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { header('Location: ../registro_riego.php'); exit; }
